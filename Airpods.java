@@ -1,13 +1,16 @@
+import java.util.ArrayList;
+
 public class Airpods {
     //fields
     private int durability;
     private int battery;
     private boolean connected;
     private boolean charging;
+    private ArrayList<String> playlist;
 
     //constructors
-    public Airpods(int myDurability, int myBattery, boolean myConnected, boolean myCharging){
-        durability = myDurability;
+    public Airpods(int myBattery, boolean myConnected, boolean myCharging){
+        durability = 100;
         battery = myBattery;
         connected = myConnected;
         charging = myCharging;
@@ -44,6 +47,33 @@ public class Airpods {
     }
     public int useAirpods(){
         battery -= 10;
+        durability -= 1;
+        if(battery == 0){
+            System.out.println("The airpods are dead");
+        }
         return battery;
+
+    }
+
+    public ArrayList<String> playlistCreation(){
+        playlist.add("20 Min, Lil Uzi");
+        playlist.add("Is This It, the Strokes");
+        playlist.add("The Bug Collector, Haley Heynderickx");
+        playlist.add("She, Tyler the Creator");
+        playlist.add("What Kind of Love, Childish Gambino");
+        playlist.add("Tell Your Friends");
+        playlist.add("Dark Red, Steve Lacy");
+        playlist.add("Ontheway, Earl Sweatshirt");
+        playlist.add("Sundress, A$AP Rocky");
+        playlist.add("Everlong, Foo Fighters");
+        return playlist;
+
+
+
+
+
+
+
+
     }
 }
