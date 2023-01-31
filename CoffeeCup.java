@@ -8,11 +8,12 @@ public class CoffeeCup {
     }
 
     public void drink(){
-        int val = (int) (Math.random() * 4) + 1;
-        amount -= 8;
-        if(amount == 0){
-            System.out.println("The cup is empty. Need to fill!");
+        if(amount < 8){
+            amount = 0;
+        } else{
+            amount -= 8;
         }
+        int val = (int) (Math.random() * 4) + 1;
         if(val == 4){
             spill();
         }
@@ -27,7 +28,7 @@ public class CoffeeCup {
     }
     
     public int getAmount(){
-        return amount;
+       return amount;
     }
 
     public int getCapacity(){
