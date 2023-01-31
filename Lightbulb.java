@@ -3,8 +3,8 @@ public class Lightbulb {
     private int light;
 
     //constructors
-    public Lightbulb(int myLight){
-        light = myLight;
+    public Lightbulb(){
+        light = 0;
     }
 
     //methods
@@ -28,7 +28,10 @@ public class Lightbulb {
         if(light <= 0){
             light = 0;
         }
-        return 0;
+        return light;
+    }
+    public int getLight(){
+        return light;
     }
 
 }
