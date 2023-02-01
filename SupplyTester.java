@@ -1,7 +1,14 @@
 public class SupplyTester {
     public static void main(String args[]){
-        //CoffeeTester();
-        //LightbulbTester();
+        System.out.println("Coffee Tester");
+        CoffeeTester();
+        System.out.println();
+        System.out.println();
+        System.out.println("Lightbulb Tester");
+        LightbulbTester();
+        System.out.println();
+        System.out.println();
+        System.out.println("Airpod Tester");
         AirpodsTester();
         
     } 
