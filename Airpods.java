@@ -54,8 +54,18 @@ public class Airpods {
         return battery;
 
     }
+<<<<<<< HEAD
 
     public void addSongs(){
+=======
+    public String shuffle(){
+        for (int i = 0; i < playlist.size(); i++){
+            playlist.get(i);
+        }
+        System.out.println("The current song playing is" + i);
+    }
+    public ArrayList<String> playlistCreation(){
+>>>>>>> a2288e4d023a216e9e89ea7d3b4228d82612bf3d
         playlist.add("20 Min, Lil Uzi");
         playlist.add("Is This It, the Strokes");
         playlist.add("The Bug Collector, Haley Heynderickx");
@@ -66,6 +76,7 @@ public class Airpods {
         playlist.add("Ontheway, Earl Sweatshirt");
         playlist.add("Sundress, A$AP Rocky");
         playlist.add("Everlong, Foo Fighters");
+<<<<<<< HEAD
 
     }
     public void shuffle(){
@@ -76,6 +87,9 @@ public class Airpods {
 
 
 
+=======
+        return playlist;
+>>>>>>> a2288e4d023a216e9e89ea7d3b4228d82612bf3d
 
     }
 }
