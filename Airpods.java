@@ -75,10 +75,4 @@ public class Airpods {
         playlist.add("What Kind of Love, Childish Gambino");
     }
 
-    public void shuffle(){
-        for (int i = 0; i < playlist.size(); i++){
-            playlist.get(i);
-        }
-        System.out.println("The current song playing is" + i);
-    }
 }
