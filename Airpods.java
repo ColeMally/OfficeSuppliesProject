@@ -55,7 +55,7 @@ public class Airpods {
 
     }
 
-    public ArrayList<String> playlistCreation(){
+    public void addSongs(){
         playlist.add("20 Min, Lil Uzi");
         playlist.add("Is This It, the Strokes");
         playlist.add("The Bug Collector, Haley Heynderickx");
@@ -66,9 +66,11 @@ public class Airpods {
         playlist.add("Ontheway, Earl Sweatshirt");
         playlist.add("Sundress, A$AP Rocky");
         playlist.add("Everlong, Foo Fighters");
-        return playlist;
 
-
+    }
+    public void shuffle(){
+        
+    }
 
 
 
