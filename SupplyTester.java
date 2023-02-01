@@ -7,7 +7,47 @@ public class SupplyTester {
     } 
 
     public static void AirpodsTester(){
-        
+        Airpods pods = new Airpods();
+        System.out.println("Airpods Durability: " + pods.getDurability());
+        System.out.println("Airpods Battery: " + pods.getBattery());
+        System.out.println();
+        System.out.println("Connecting airpods...");
+        System.out.println("Airpods Connected: " + pods.Connect());
+        System.out.println();
+        System.out.println("Playing playlist...");
+        pods.addSongs();
+        System.out.println("Song playing now: " + pods.playsong());
+        pods.useAirpods();
+        System.out.println("Playing next song...");
+        System.out.println("Song playing now: " + pods.playsong());
+        pods.useAirpods();
+        System.out.println("Playing next song...");
+        System.out.println("Song playing now: " + pods.playsong());
+        pods.useAirpods();
+        System.out.println("Playing next song...");
+        System.out.println("Song playing now: " + pods.playsong());
+        pods.useAirpods();
+        System.out.println("Playing next song...");
+        System.out.println("Song playing now: " + pods.playsong());
+        pods.useAirpods();
+        System.out.println();
+        System.out.println("Airpods Durability: " + pods.getDurability());
+        System.out.println("Airpods Battery: " + pods.getBattery());
+        System.out.println();
+        System.out.println("We need to charge our Airpods!");
+        pods.charge();
+        System.out.println("Plug in airpods!");
+        System.out.println("Airpods Charging: " + pods.checkCharge());
+        System.out.println("We can charge airpods now!");
+        pods.charge();
+        System.out.println();
+        System.out.println("Airpods Durability: " + pods.getDurability());
+        System.out.println("Airpods Battery: " + pods.getBattery());
+        System.out.println();
+        System.out.println("Uh oh Mr. Rosato is coming! Disconnect the airpods!");
+        pods.Disconnect();
+        System.out.println("Airpod connection: " + pods.Disconnect());
+
     }
 
     public static void LightbulbTester(){
