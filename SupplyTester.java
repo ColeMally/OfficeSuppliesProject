@@ -1,6 +1,6 @@
 public class SupplyTester {
     public static void main(String args[]){
-        System.out.println("Coffee Tester");
+        System.out.println("Coffee Pot Tester");
         CoffeeTester();
         System.out.println();
         System.out.println();
