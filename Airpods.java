@@ -1,3 +1,8 @@
+/**
+ * @author Cole Mallinger and Junaid Bhatti
+ * @version 02/01/2023
+ * This code creates a an airpods class with 10 methods
+ */
 import java.util.ArrayList;
 
 public class Airpods {
@@ -17,24 +22,41 @@ public class Airpods {
 
 
     //methods
+    /**
+     * Check if airpods are connected
+     * @return boolean
+     */
     public boolean Connect(){
         connected = true;
         return connected;
     }
+    /**
+     * Check if airpods are disconnected
+     * @return boolean
+     */
     public boolean Disconnect(){
         connected = false;
         return connected;
     }
-
+/**
+ * Checks if charging
+ * @return boolean
+ */
     public boolean checkCharge(){
         charging = true;
         return charging;
     }
+/**
+ * Checks if not charging
+ * @return boolean
+ */
     public boolean notCharging(){
         charging = false;
         return charging;
     }
-
+/**
+ * Sets airpod battery to full
+ */
     public void charge(){
         if(charging == true){
             battery = 100;
@@ -43,7 +65,10 @@ public class Airpods {
             System.out.println("The case is not charging");
         }
     }
-
+/**
+ * Decreases airpod battery
+ * @return int battery
+ */
     public int useAirpods(){
         battery -= 10;
         durability -= 1;
@@ -53,20 +78,31 @@ public class Airpods {
         return battery;
 
     }
-
+/**
+ * Removes song from playlist
+ * @return String song
+ */
     public String playsong(){
        return playlist.remove(0);
     }
     
-
+/**
+ * Gets durability of airpods
+ * @return int durability 
+ */
     public int getDurability(){
         return durability;
     }
-
+/**
+ * Gets battery of airpods
+ * @return int battery
+ */
     public int getBattery(){
         return battery;
     }
-
+/**
+ * Adds songs to playlist
+ */
     public void addSongs(){
         playlist.add("20 Min, Lil Uzi");
         playlist.add("Is This It, the Strokes");

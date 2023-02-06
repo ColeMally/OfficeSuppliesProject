@@ -1,4 +1,9 @@
-public class SupplyTester {
+/**
+ * @author Cole Mallinger and Junaid Bhatti
+ * @version 02/01/2023
+ * This code tests all three seperate classes (Coffee cup, Lightbulb, Airpods)
+ */
+ public class SupplyTester {
     public static void main(String args[]){
         System.out.println("Coffee Pot Tester");
         CoffeeTester();
@@ -12,7 +17,9 @@ public class SupplyTester {
         AirpodsTester();
         
     } 
-
+/**
+ * Airpod Tester (goes through all methods)
+ */
     public static void AirpodsTester(){
         Airpods pods = new Airpods();
         System.out.println("Airpods Durability: " + pods.getDurability());
@@ -56,7 +63,9 @@ public class SupplyTester {
         System.out.println("Airpod connection: " + pods.Disconnect());
 
     }
-
+/**
+ * Lightbulb Tester (goes through all the methods)
+ */
     public static void LightbulbTester(){
         Lightbulb bulby = new Lightbulb();
         System.out.println("The brightness of the light is: " +bulby.getLight());
@@ -74,6 +83,9 @@ public class SupplyTester {
         System.out.println("The brightness of the light is: " +bulby.getLight());
 
     }
+/**
+ * Coffee Cup Tester (goes thorugh all the methods)
+ */
     public static void CoffeeTester(){
         CoffeeCup c = new CoffeeCup();
         System.out.print("The capacity of the cup is: ");
